@@ -1,6 +1,6 @@
 $icon-font-path: '../fonts/';
 
-$font-family-base:                          'roboto-light';
+$font-family-base: 'roboto-light';
 
 $navbar-height:                             56px;
 $navbar-default-bg:                         #505050;
@@ -26,15 +26,18 @@ $input-border-focus:                       #707070;
 // endbower
 
 
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
 }
 
+
 html, body {
   height: 100%;
   background-color: #f4f4f4;
 }
+
 
 .navbar-default {
   border: none;
@@ -63,6 +66,7 @@ html, body {
 .input-group-addon {
   background-color: #707070;
 }
+
 
 .glide-menu-container {
   width: 60px;
@@ -136,9 +140,17 @@ html, body {
   }
 }
 
+
 /* Responsive: Portrait tablets and up */
 @media screen and (max-width: $screen-sm-min) {
-  body {
-    background-color: red;
+  .navbar-form {
+    margin: 0 5px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    li {
+      display: inline-block;
+    }
   }
 }

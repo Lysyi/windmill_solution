@@ -11,6 +11,9 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/roboto-fontface/css/roboto/roboto-fontface.css" />
+    <link rel="stylesheet" href="/bower_components/roboto-fontface/css/roboto-condensed/roboto-condensed-fontface.css" />
+    <link rel="stylesheet" href="/bower_components/icomoon-bower/style.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -29,17 +32,23 @@
 
     <div class="container-fluid">
       <nav class="navbar navbar-default row no-gutter">
-        <ul class="col-sm-6 nav navbar-nav">
-          <li>
+        <div class="col-sm-6 no-gutter">
+          <div class="glide-menu-container navbar-left">
             <input type="checkbox" name="toggle-glide-menu" id="toggle-glide-menu" />
             <label for="toggle-glide-menu"></label>
             <div class="glide-menu">
-              test
+              <ul class="nav nav-pills-default nav-stacked">
+                <li><a href="#"><span class="icon-filter"></span>Filters</a></li>
+                <li><a href="#"><span class="icon-file-text"></span>Portfolios</a></li>
+                <li><a href="#"><span class="icon-users"></span>Explicit Rights</a></li>
+              </ul>
             </div>
-          </li>
-          <li class="active"><a href="#">Test Task - Menu<span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Dashboard</a></li>
-        </ul>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Test Task - Menu<span class="glyphicon glyphicon-chevron-right"></span></a></li>
+            <li><a href="#">Dashboard</a></li>
+          </ul>
+        </div>
         <div class="col-sm-6">
           <form class="navbar-form input-group" role="search">
             <span class="input-group-addon" id="basic-addon1">@</span>

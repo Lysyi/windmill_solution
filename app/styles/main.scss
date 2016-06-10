@@ -1,37 +1,77 @@
 $icon-font-path: '../fonts/';
 
+$font-family-base:          'roboto-light';
+
 $navbar-height: 56px;
 $navbar-default-bg:                #505050;
 $navbar-default-border:            none;
 $navbar-border-radius:             0px;
 
 
+$navbar-default-link-color:                #ffffff;
+$navbar-default-link-hover-color:          #ffffff;
+$navbar-default-link-hover-bg:             #919191;
+$navbar-default-link-active-color:         #ffffff;
+$navbar-default-link-active-bg:            none;
+
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-body {
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+html, body {
+  height: 100%;
   background-color: #f4f4f4;
 }
 
+.navbar-default {
+  border: none;
+}
+
+.navbar-nav {
+  a {
+    font-size: 19px;
+  }
+  .active {
+    font-family: 'roboto-regular';
+  }
+  .glyphicon {
+    padding-left: 30px;
+    font-size: 10px;
+    font-weight: normal;
+  }
+}
 
 
+.glide-menu-container {
+  width: 60px;
+  height: 56px;
+}
 
 .glide-menu {
-background:blue;
-color:#FFF;
-position: absolute;
-left: -20px;
-width: 20px;
-height: 250px;
-transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-overflow: hidden;
-box-sizing: border-box;
-
+  z-index: 1000;
+  position: absolute;
+  background: #202020;
+  color:#FFF;
+  top: 56px;
+  left: -185px;
+  width: 185px;
+  height: 95vh;
+  padding-top: 15px;
+  transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 
 #toggle-glide-menu {
+  position: absolute;
   appearance:none;
   cursor:pointer;
   left:-100%;
@@ -39,32 +79,47 @@ box-sizing: border-box;
 }
 
 #toggle-glide-menu + label {
-
-
-  background: #26ae90;
-width: 100px;
+  position: absolute;
+  left: 0;
+  background: #202020;
+  width: 60px;
+  height: 56px;
+  padding-top: 10px;
   transition:all 500ms ease;
+  color: #fff;
+  font-family: 'icomoon';
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
 }
+
 #toggle-glide-menu + label:after {
-  content:"Open"
+  content:"\e9bd";
 }
-
-
 
 #toggle-glide-menu:checked ~ .glide-menu {
-  left: 0;
-}
-
-#toggle-glide-menu:checked + label {
-  background:#dd6149;
+  left: -1px;
 }
 
 #toggle-glide-menu:checked + label:after {
-  content:"Close"
+  content:"\ea40";
 }
 
 
-
+.nav-pills-default {
+  li {
+    span {
+      margin-right: 15px;
+    }
+    a {
+      color: #cccccc;
+      text-transform: uppercase;
+      &:hover {
+        background-color: #3a3a3a;
+      }
+    }
+  }
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

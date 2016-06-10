@@ -1,11 +1,11 @@
 $icon-font-path: '../fonts/';
 
-$font-family-base:          'roboto-light';
+$font-family-base:                          'roboto-light';
 
-$navbar-height: 56px;
-$navbar-default-bg:                #505050;
-$navbar-default-border:            none;
-$navbar-border-radius:             0px;
+$navbar-height:                             56px;
+$navbar-default-bg:                         #505050;
+$navbar-default-border:                     none;
+$navbar-border-radius:                      0px;
 
 
 $navbar-default-link-color:                #ffffff;
@@ -13,6 +13,12 @@ $navbar-default-link-hover-color:          #ffffff;
 $navbar-default-link-hover-bg:             #919191;
 $navbar-default-link-active-color:         #ffffff;
 $navbar-default-link-active-bg:            none;
+
+$input-bg:                                 #707070;
+$input-color:                              #ffffff;
+$input-border:                             #707070;
+$input-color-placeholder:                  #ffffff;
+$input-border-focus:                       #707070;
 
 
 // bower:scss
@@ -36,7 +42,7 @@ html, body {
 
 .navbar-nav {
   a {
-    font-size: 19px;
+    font-size: 17px;
   }
   .active {
     font-family: 'roboto-regular';
@@ -48,6 +54,15 @@ html, body {
   }
 }
 
+.navbar-form {
+  input {
+    width: 100% !important;
+  }
+}
+
+.input-group-addon {
+  background-color: #707070;
+}
 
 .glide-menu-container {
   width: 60px;
@@ -122,6 +137,8 @@ html, body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-
+@media screen and (max-width: $screen-sm-min) {
+  body {
+    background-color: red;
+  }
 }

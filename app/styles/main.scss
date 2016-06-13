@@ -22,7 +22,6 @@ $input-border-focus:                       #707070;
 
 
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 
@@ -136,21 +135,6 @@ html, body {
       &:hover {
         background-color: #3a3a3a;
       }
-    }
-  }
-}
-
-
-/* Responsive: Portrait tablets and up */
-@media screen and (max-width: $screen-sm-min) {
-  .navbar-form {
-    margin: 0 5px;
-  }
-
-  .navbar-nav {
-    text-align: center;
-    li {
-      display: inline-block;
     }
   }
 }

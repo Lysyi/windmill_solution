@@ -2,19 +2,10 @@
   "name": "windmill-solution",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "roboto-fontface": "^0.5.0",
-    "icomoon-bower": "icomoon#^0.1.0"
-  },
-  "overrides": {
-    "bootstrap-sass": {
-      "main": [
-        "assets/stylesheets/_bootstrap.scss",
-        "assets/fonts/bootstrap/*",
-        "assets/javascripts/bootstrap.js"
-      ]
-    }
+    "icomoon-bower": "icomoon#^0.1.0",
+    "normalize-css": "^4.1.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
